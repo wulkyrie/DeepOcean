@@ -1,0 +1,146 @@
+<!doctype HTML>
+
+<head>
+  <link href="main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="fullPagemaster/dist/fullpage.css" rel="stylesheet">
+  <link href="fullPagemaster/examples/examples.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <!-- a div is divisibe element  -->
+      <div class="button hamburger">
+        <img src="img/logogonew.png" alt="logogonew" width="100" height="100">
+
+      </div>
+
+
+
+      <div class="sidebar">
+
+        <div class="sidemenu-bits">
+            <h1>hello world!</h1><br><br>
+            <h2>This page created for study purposes by using fullpage.js </h2><br><br><br>
+        </div>
+<div class="icons">
+
+  <div class="icon2">
+  <a href=""><i class="fab fa-facebook-f" width="50" height="50" ></i></a></div>
+
+             <div class="icon3">
+               <a href=""><i class="fab fa-instagram" width="50" height="50" ></i>
+                 <a/></div>
+</div>
+
+    </div>
+
+
+
+    <div id="fullpage">
+
+
+
+
+    <div class="section active" id="section-0">
+      <div class="textbox">
+        <h1>Deep Ocean</h1>
+        <p></p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="section" id="section-2">
+        <div class="slide" data-anchor="slide1">
+          <div class="background-logo">
+            <img src="img/dumbo.jpg" alt="yolo" width="350px" >
+          </div>
+        </div>
+        <div class="slide" data-anchor="slide2">
+            <div class="background-logo">
+              <img src="img/bio-1.jpg" alt="yolo" width="350px" >
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="section" id="section-3">
+      <div class="slide" data-anchor="slide1">
+        <div class="background-logo">
+          <img src="img/bio-1.jpg" alt="yolo" width="450px" >
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide2">
+        <div class="background-logo">
+          <img src="img/bio-2.jpg" alt="yolo" width="450px" >
+        </div>
+        </div>
+        <div class="slide" data-anchor="slide3">
+          <div class="background-logo">
+            <img src="img/bio-3.jpg" alt="yolo" width="450px" >
+          </div>
+          </div>
+          <div class="slide" data-anchor="slide4">
+            <div class="background-logo">
+              <img src="img/bio-4.jpg" alt="yolo" width="450px" >
+            </div>
+            </div>
+            <div class="slide" data-anchor="slide5">
+              <div class="background-logo">
+                <img src="img/bio-5.jpg" alt="yolo" width="450px" >
+              </div>
+              </div>
+              <div class="slide" data-anchor="slide6">
+                <div class="background-logo">
+                  <img src="img/bio-6.jpg" alt="yolo" width="450px" >
+                </div>
+                </div>
+      </div>
+</div>
+
+
+
+
+
+  <script src="fullPagemaster/dist/fullpage.js"></script>
+  <script src="hamburger.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+  //options here
+  autoScrolling:true,
+  scrollHorizontally: true
+  });
+
+  var rightarrow = true;
+  $(".fp-next").html("<img src='' />");
+
+
+  $(".fp-next").on("click", function(){
+    if (rightarrow == true) {
+      $(".fp-next").html("<img src='' />");
+    }
+    else {
+      $(".fp-next").html("<img src='' />");
+    }
+    rightarrow = !rightarrow;
+  });
+
+  </script>
+</body>
